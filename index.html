@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FERRARI </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        ferrari: ['Orbitron', 'sans-serif'],
+                        body: ['Titillium Web', 'sans-serif']
+                    },
+                    colors: {
+                        ferrariRed: '#ff2800',
+                        carbon: '#0a0a0a',
+                        steel: '#1a1a1a'
+                    },
+                    boxShadow: {
+                        deep: '0 10px 30px rgba(255,40,0,0.4)'
+                    },
+                    backgroundImage: {
+                        speed: "linear-gradient(135deg, #ff2800 0%, #990000 100%)",
+                        glass: "linear-gradient(to bottom right, rgba(255,255,255,0.05), rgba(255,255,255,0.01))"
+                    },
+                    backdropBlur: {
+                        full: '14px'
+                    },
+                    animation: {
+                        pulseRed: 'pulseRed 2s infinite'
+                    },
+                    keyframes: {
+                        pulseRed: {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.4 }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Titillium Web', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-carbon text-white">
+    <nav class="sticky top-0 z-50 bg-black/80 backdrop-blur border-b border-red-800 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <h1 class="text-ferrariRed font-ferrari text-2xl tracking-wide">FERRARI.</h1>
+            <ul class="hidden md:flex space-x-6 text-sm uppercase font-bold text-white">
+                <li><a href="#hero" class="hover:text-ferrariRed transition">Home</a></li>
+                <li><a href="#models" class="hover:text-ferrariRed transition">Models</a></li>
+                <li><a href="#speed" class="hover:text-ferrariRed transition">Top Speed</a></li>
+                <li><a href="#faq" class="hover:text-ferrariRed transition">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="hero"
+        class="h-screen bg-[url(https://static0.carbuzzimages.com/wordpress/wp-content/uploads/2024/10/ferrari-f80-1.jpg)] bg-cover bg-center flex items-center justify-center relative">
+        <div class="bg-black/60 p-10 text-center rounded-lg z-10">
+            <h1
+                class="text-6xl md:text-8xl font-extrabold text-ferrariRed font-ferrari animate-pulseRed drop-shadow-xl">
+                FERRARI.</h1>
+            <p class="mt-4 text-xl uppercase text-gray-200 tracking-widest">pure speed. pure soul.</p>
+        </div>
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    </section>
+    <div class="h-1 w-full bg-gradient-to-r from-ferrariRed via-yellow-400 to-ferrariRed animate-pulseRed"></div>
+    <div class="h-1 w-full bg-gradient-to-r from-ferrariRed via-yellow-400 to-ferrariRed animate-pulseRed"></div>
+    <section class="container mx-auto py-20 px-6">
+        <h2 id="models"
+            class="text-4xl md:text-5xl text-center animate-pulseRed text-ferrariRed font-bold  mb-12 font-ferrari tracking-wide">
+            Iconic Models</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div
+                class="bg-glass border border-gray-700 backdrop-blur-full rounded-xl overflow-hidden shadow-deep hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Red_2019_Ferrari_SF90_Stradale_%2848264238897%29_%28cropped%29.jpg/960px-Red_2019_Ferrari_SF90_Stradale_%2848264238897%29_%28cropped%29.jpg"
+                    class="w-full h-56 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold">SF90 Stradale</h3>
+                    <p class="text-gray-300 mt-2 text-sm">A 986 HP hybrid monster. Ferrari's future, now.</p>
+                </div>
+            </div>
+            <div
+                class="bg-glass border border-gray-700 backdrop-blur-full rounded-xl overflow-hidden shadow-deep hover:scale-105 transition">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Ferrari/296-GTB/9306/1662555237288/front-left-side-47.jpg"
+                    class="w-full h-56 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold">296 GTB</h3>
+                    <p class="text-gray-300 mt-2 text-sm">Sharp, compact, brutal. V6 + electric boost.</p>
+                </div>
+            </div>
+            <div
+                class="bg-glass border border-gray-700 backdrop-blur-full rounded-xl overflow-hidden shadow-deep hover:scale-105 transition">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBuWSs3SPhtfxHcVWyInbgwtaVsLeeG8D-Eg&s"
+                    class="w-full h-56 object-cover">
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold">Daytona SP3</h3>
+                    <p class="text-gray-300 mt-2 text-sm">Retro lines. Hypermodern guts. Instant icon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="h-1 w-full bg-gradient-to-r from-ferrariRed via-yellow-400 to-ferrariRed animate-pulseRed"></div>
+    <section class="bg-black py-16 px-6">
+        <h2 class="text-3xl text-center font-bold text-ferrariRed mb-8">🏁 Ferrari Milestones</h2>
+        <div class="flex flex-wrap justify-center gap-8 text-center">
+            <div class="bg-steel text-white p-4 rounded-xl w-40 border-l-4 border-ferrariRed">
+                <h3 class="font-ferrari text-xl">1947</h3>
+                <p class="text-sm">First Ferrari car built</p>
+            </div>
+            <div class="bg-steel text-white p-4 rounded-xl w-40 border-l-4 border-ferrariRed">
+                <h3 class="font-ferrari text-xl">2004</h3>
+                <p class="text-sm">Schumacher wins 7th title</p>
+            </div>
+            <div class="bg-steel text-white p-4 rounded-xl w-40 border-l-4 border-ferrariRed">
+                <h3 class="font-ferrari text-xl">2023</h3>
+                <p class="text-sm">SF90 breaks records</p>
+            </div>
+        </div>
+    </section>
+    <div class="group w-80 h-48 mx-auto [perspective:1000px]">
+        <div
+            class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+            <div
+                class="absolute w-full h-full rounded-xl bg-red-700 text-white px-6 py-4 flex flex-col justify-center items-center shadow-lg [backface-visibility:hidden]">
+                <h3 class="text-2xl font-bold font-ferrari mb-2 tracking-wider">V8 Twin Turbo</h3>
+                <p class="text-sm text-center leading-relaxed">710 HP<br>0 to 100 in 2.9s<br>Top Speed: 340 km/h</p>
+            </div>
+            <div
+                class="absolute w-full h-full rounded-xl overflow-hidden shadow-xl [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Ferrari_488_engine.jpg"
+                    class="w-full h-full object-cover" />
+            </div>
+        </div>
+    </div>
+    <section id="track" class="bg-carbon py-16 px-6">
+        <h2 class="text-center text-ferrariRed font-bold text-2xl font-ferrari mb-6 tracking-widest">🏎️ Track Progress
+        </h2>
+        <div
+            class="w-full max-w-xl mx-auto bg-gray-800 rounded-full h-6 overflow-hidden shadow-inner border-2 border-ferrariRed">
+            <div id="bar"
+                class="h-full bg-gradient-to-r from-yellow-400 via-red-500 to-ferrariRed transition-all duration-500 ease-in-out w-0">
+            </div>
+        </div>
+        <p class="text-center mt-3 text-sm text-gray-300 font-body">Scrolling Through the Lap...</p>
+    </section>
+    <div class="h-1 w-full bg-gradient-to-r from-ferrariRed via-yellow-400 to-ferrariRed animate-pulseRed"></div>
+    <section class="bg-gradient-to-br from-ferrariRed to-red-900 py-20 text-center">
+        <h3 id="speed" class="text-3xl font-bold text-black font-ferrari tracking-wider mb-4">Top Speed: 340 KM/H</h3>
+        <p class="text-white uppercase text-sm">That's not a car. That's a fighter jet on wheels.</p>
+    </section>
+    <div class="h-1 w-full bg-gradient-to-r from-ferrariRed via-yellow-400 to-ferrariRed animate-pulseRed"></div>
+    <section class="container mx-auto py-20 px-6">
+        <h2 id="faq" class="text-3xl font-bold text-white text-center mb-10">FAQ</h2>
+        <div class="space-y-6 max-w-3xl mx-auto">
+            <div class="border-l-4 border-ferrariRed pl-4">
+                <h4 class="font-bold text-lg text-white">Can I own one as a student?</h4>
+                <p class="text-gray-400">Only if Hack Club or elon musk sponsers you, lol😅</p>
+            </div>
+            <div class="border-l-4 border-ferrariRed pl-4">
+                <h4 class="font-bold text-lg text-white">Which is the fastest Ferrari?</h4>
+                <p class="text-gray-400">Currently the SF90 Stradale. 0-100 in 2.5s 🚀</p>
+            </div>
+            <div class="border-l-4 border-ferrariRed pl-4">
+                <h4 class="font-bold text-lg text-white">Is there an electric Ferrari?</h4>
+                <p class="text-gray-400">Not yet. But it's coming⚡</p>
+            </div>
+        </div>
+    </section>
+    <div class="h-1 w-full bg-gradient-to-r from-ferrariRed via-yellow-400 to-ferrariRed animate-pulseRed"></div>
+    <footer class="bg-carbon py-10 text-center text-gray-500 text-sm border-t border-gray-800">
+        Built with love Anirudh Sahu For Hackclub ⚡️ | © 2025
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
